@@ -1,0 +1,11 @@
+.logo-img {
+  width: 50%;
+
+  @include respond(tab-port) {
+    width: 85%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
