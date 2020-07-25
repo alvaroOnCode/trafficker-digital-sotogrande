@@ -1,0 +1,18 @@
+.subservice-container {
+  height: 100%;
+  padding: 1rem;
+
+  & .subservice-title {
+    color: $color-primary;
+    text-align: left;
+
+    & i {
+      color: $color-primary;
+    }
+  }
+
+  & .subservice-desc {
+    color: $color-grey-light;
+    text-align: left;
+  }
+}

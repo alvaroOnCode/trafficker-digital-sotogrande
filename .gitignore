@@ -22,14 +22,14 @@ pnpm-debug.log*
 *.sw?
 
 # Binary
-.jpg
-.JPG
-.jpeg
-.JPEG
-.pdf
-.PDF
-.png
-.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.pdf
+*.PDF
+*.png
+*.PNG
 
 # Input assets from client
 /input

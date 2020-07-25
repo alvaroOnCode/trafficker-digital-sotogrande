@@ -1,0 +1,10 @@
+.home-services-container {
+  padding: 4rem 12.5vw;
+
+  & .home-services_row {
+    & .home-services_col {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}

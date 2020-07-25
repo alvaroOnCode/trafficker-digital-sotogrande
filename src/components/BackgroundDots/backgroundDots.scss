@@ -1,0 +1,30 @@
+.background-dots-container {
+  background-color: peru;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+
+  & .dot {
+    background-color: $color-primary;
+    border-radius: 50%;
+    position: absolute;
+
+    &.dot-depth-1 {
+      filter: blur(1px);
+      height: 1rem;
+      width: 1rem;
+    }
+
+    &.dot-depth-2 {
+      filter: blur(3px);
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+
+    &.dot-depth-3 {
+      filter: blur(6px);
+      height: 0.25rem;
+      width: 0.25rem;
+    }
+  }
+}
