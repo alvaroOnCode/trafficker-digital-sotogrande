@@ -1,0 +1,27 @@
+.footer-container {
+  color: $color-grey-super-light;
+  height: 100%;
+
+  & .footer-container_row {
+    height: 95%;
+
+    & .footer-container_col {
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    & .footer-container_col--1 {
+    }
+
+    & .footer-container_col--2 {
+    }
+
+    & .footer-container_col--3 {
+      & .footer-divider {
+        margin: 1rem auto;
+        min-width: 0;
+        width: 60%;
+      }
+    }
+  }
+}

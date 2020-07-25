@@ -2,19 +2,19 @@
   <div class="header-container">
     <!-- Social Media -->
     <div class="header_social-media">
-      <SocialMedia />
+      <SocialMedia :align="'right'" />
     </div>
 
     <!-- Logo -->
     <div class="header_logo">
-      <Logo />
+      <Logo :size="'medium'" />
     </div>
 
-    <!-- Dots -->
+    <!-- Dots
     <div class="header_dots">
       <div class="header_dot header_dot--1"></div>
       <div class="header_dot header_dot--2"></div>
-    </div>
+    </div>-->
   </div>
 </template>
 

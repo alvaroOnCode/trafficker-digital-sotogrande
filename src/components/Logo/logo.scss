@@ -1,5 +1,15 @@
 .logo-img {
-  width: 50%;
+  &.small {
+    width: 25%;
+  }
+
+  &.medium {
+    width: 50%;
+  }
+
+  &.large {
+    width: 75%;
+  }
 
   @include respond(tab-port) {
     width: 85%;

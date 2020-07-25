@@ -1,6 +1,6 @@
 <template>
   <img
-    class="logo-img"
+    :class="`logo-img ${size}`"
     src="@/assets/logo/large/logo-large-green.png"
     alt="Trafficker Digital Sotogrande"
   />
@@ -8,7 +8,13 @@
 
 <script>
 export default {
-  name: "Logo"
+  name: "Logo",
+  props: {
+    size: {
+      type: String,
+      default: "medium"
+    }
+  }
 };
 </script>
 
