@@ -1,9 +1,7 @@
 <template>
   <div class="subservice-container">
-    <h3 class="subservice-title">
-      <a-icon :type="subservice.iconType" />
-      {{ subservice.title }}
-    </h3>
+    <a-icon :type="subservice.iconType" />
+    <h3 class="subservice-title">{{ subservice.title }}</h3>
 
     <p class="subservice-desc">{{ subservice.description }}</p>
   </div>

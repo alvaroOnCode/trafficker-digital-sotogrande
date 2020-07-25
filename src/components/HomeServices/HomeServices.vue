@@ -5,7 +5,7 @@
         v-for="(subservice, i) in subservices"
         :key="`subservice-${i}`"
         class="home-services_col"
-        :span="4"
+        :span="6"
       >
         <Subservice :subservice="subservice" />
       </a-col>
@@ -27,10 +27,7 @@ export default {
   },
   data: () => ({
     subservices
-  }),
-  created() {
-    console.log(subservices);
-  }
+  })
 };
 </script>
 

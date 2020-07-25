@@ -30,20 +30,13 @@ export default {
     HomeSobreNosotros,
     SquaresContainer
   },
-
-  head() {
-    return {
-      title: "Álvaro Saavedra Díaz 🧑‍💻 Software Developer",
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Página web de Álvaro Saavedra (@alvaroOnCode), donde encontrarás información personal, profesional y artículos de desarrollo de software."
-        }
-      ]
-    };
+  metaInfo: {
+    title: "Trafficker Digital Sotogrande",
+    titleTemplate: "%s - 📊 ¡Hola!",
+    htmlAttrs: {
+      lang: "en",
+      amp: true
+    }
   }
 };
 </script>

@@ -2,17 +2,20 @@
   height: 100%;
   padding: 1rem;
 
-  & .subservice-title {
+  & i {
     color: $color-primary;
-    text-align: left;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
 
-    & i {
-      color: $color-primary;
-    }
+  & .subservice-title {
+    color: $color-grey-super-light;
+    text-align: left;
   }
 
   & .subservice-desc {
     color: $color-grey-light;
-    text-align: left;
+    font-size: 1rem;
+    text-align: justify;
   }
 }
