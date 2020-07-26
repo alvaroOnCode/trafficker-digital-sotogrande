@@ -3,34 +3,25 @@
     <h3>Nuestros servicios</h3>
 
     <a-row class="squares-container_row">
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'marketingDigital'" />
-      </a-col>
-
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'desarrolloWeb'" />
-      </a-col>
-
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'diseno'" />
-      </a-col>
-
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'produccionAudiovisual'" />
-      </a-col>
-
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'fotografia'" />
-      </a-col>
-
-      <a-col class="squares-container_col" :span="4" :style="style">
-        <Square :category="'packs'" />
+      <a-col
+        v-for="(square, k, i) in squares"
+        :key="`square-${i}`"
+        class="squares-container_col"
+        :span="4"
+        :style="style"
+        @click="onSelectSquare(k)"
+      >
+        <Square :title="square.title" />
       </a-col>
     </a-row>
   </div>
 </template>
 
 <script>
+// Data
+import { squares } from "../../data/squares.js";
+
+// Components
 import Square from "../../components/Square/Square";
 
 export default {
@@ -38,8 +29,17 @@ export default {
   data: () => ({
     columnHeight: {
       type: Number,
-      default: 16
-    }
+      default: 0
+    },
+    customEvent: {
+      type: CustomEvent,
+      default: undefined
+    },
+    customEventData: {
+      type: Object,
+      default: {}
+    },
+    squares
   }),
   components: {
     Square
@@ -54,8 +54,21 @@ export default {
       this.columnHeight = document.querySelector(
         ".squares-container_col"
       ).clientWidth;
+    },
+    onSelectSquare(category) {
+      if (category !== this.customEventData.category) {
+        this.customEventData = { category: category };
+      } else {
+        this.customEventData = { category: "" };
+      }
+
+      this.customEvent = new CustomEvent("onSquareSelected", {
+        detail: this.customEventData
+      });
+      window.dispatchEvent(this.customEvent);
     }
   },
+  created() {},
   mounted() {
     this.calcColumnHeight();
   }

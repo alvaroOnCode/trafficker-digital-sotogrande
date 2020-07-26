@@ -4,8 +4,8 @@
       <a-col
         v-for="(subservice, i) in subservices"
         :key="`subservice-${i}`"
-        class="home-services_col"
         :span="6"
+        class="home-services_col"
       >
         <Subservice :subservice="subservice" />
       </a-col>

@@ -1,16 +1,35 @@
 <template>
-  <div class="subservice-container">
-    <a-icon :type="subservice.iconType" />
-    <h3 class="subservice-title">{{ subservice.title }}</h3>
-
-    <p class="subservice-desc">{{ subservice.description }}</p>
+  <div :class="`subservice-container ${selected}`">
+    <h3 :class="`subservice-title ${selected}`">
+      <a-icon :class="`subservice-icon ${selected}`" :type="subservice.iconType" />
+      {{ subservice.title }}
+    </h3>
+    <p :class="`subservice-desc ${selected}`">{{ subservice.description }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "Subservice",
-  props: ["subservice"]
+  data: () => ({
+    category: {
+      type: String,
+      default: ""
+    }
+  }),
+  props: ["subservice"],
+  computed: {
+    selected() {
+      return this.category !== "" && this.category === this.subservice.category
+        ? "selected"
+        : "";
+    }
+  },
+  created() {
+    window.addEventListener("onSquareSelected", e => {
+      this.category = e.detail.category;
+    });
+  }
 };
 </script>
 
