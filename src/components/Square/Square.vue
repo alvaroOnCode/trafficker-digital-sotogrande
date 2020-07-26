@@ -1,6 +1,9 @@
 <template>
   <div class="square-container">
-    <h2>{{ title }}</h2>
+    <div class="square-container_texts">
+      <h2>{{ title }}</h2>
+      <p v-if="description !== ''">{{ description }}</p>
+    </div>
   </div>
 </template>
 
@@ -9,6 +12,11 @@ export default {
   name: "Square",
   props: {
     title: {
+      type: String,
+      default: ""
+    },
+
+    description: {
       type: String,
       default: ""
     }

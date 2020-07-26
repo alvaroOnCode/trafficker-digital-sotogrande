@@ -21,5 +21,6 @@ export const squares = {
 
   packs: {
     title: 'Packs',
+    description: '(Pregúntanos)',
   },
 }

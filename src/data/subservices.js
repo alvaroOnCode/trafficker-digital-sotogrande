@@ -42,37 +42,42 @@ export const subservices = [
 
   // Desarrollo Web
   {
-    title: 'Creación de Páginas Web',
-    description: 'Lorem ipsum',
-    iconType: 'heart',
+    title: 'Web básica',
+    description:
+      'Si tu misión actual es unirte a la ola de internet , la mejor opción para tener presencia digital y dar a conocer los servicios y productos que ofreces, es a través de una web sencilla, con contenido estático e informativo, ¡justo lo que necesitas para llegar a nuevos clientes y reforzar tu marca!',
+    iconType: 'global',
+    category: 'desarrolloWeb',
+  },
+
+  {
+    title: 'Web Intermedia',
+    description:
+      'Esta es la opción más usada por la mayoría de negocios. Nuestro equipo te ofrece la posibilidad de crear una web en la que puedes integrar un apartado de blog en el que compartir las últimas novedades de tu negocio y así, mantener tu web siempre viva.',
+    iconType: 'global',
+    category: 'desarrolloWeb',
+  },
+
+  {
+    title: 'Web Premium',
+    description:
+      'Si quieres dejar huella e ir más allá de donde muy pocos llegan, esta es la opción perfecta para tu negocio. Nuestro equipo de desarrollo web te ofrece la posibilidad de crear una página web con múltiples customizaciones, en definitiva, una web dinámica que, incluso puede llegar a ser una aplicación web. ¿Te atreves a ser el primero de tu sector en destacar?',
+    iconType: 'global',
     category: 'desarrolloWeb',
   },
 
   {
     title: 'Tienda Online',
-    description: 'Lorem ipsum',
+    description:
+      'Actualmente, muchos dicen que si no estás en internet, no existes. ¿Por qué no llevar tu negocio más allá y adelantarte a tus competidores? Llega a más clientes y aumenta tus ingresos gracias al poder de internet y a las dotes de nuestro equipo de Desarrollo Web.',
     iconType: 'shopping-cart',
     category: 'desarrolloWeb',
   },
 
   {
-    title: 'Creación de apps',
-    description: 'Lorem ipsum',
-    iconType: 'team',
-    category: 'desarrolloWeb',
-  },
-
-  {
     title: 'Landing pages',
-    description: 'Lorem ipsum',
+    description:
+      'Si quieres anunciarte en internet o redes sociales pero no tienes muy claro cómo, esta opción es ideal para ello. Las landing pages son páginas estáticas ocultas a las que solamente se puede acceder a través de los botones de anuncios de redes sociales o de buscadores. ¿Preparado para generar ingresos?',
     iconType: 'select',
-    category: 'desarrolloWeb',
-  },
-
-  {
-    title: 'Microsites',
-    description: 'Lorem ipsum',
-    iconType: 'global',
     category: 'desarrolloWeb',
   },
 
@@ -145,21 +150,24 @@ export const subservices = [
   // Fotografía
   {
     title: 'Fotografía publicitaria',
-    description: '',
+    description:
+      'Dicen que una imagen vale más que mil palabras, ¿por qué no provocar sensaciones en tu público a través de fotografías? Nosotros te ayudaremos a sacar todo el partido y crear imágenes que dejen huella en tu público.',
     iconType: 'camera',
     category: 'fotografia',
   },
 
   {
     title: 'Fotografía de moda',
-    description: '',
+    description:
+      'Dicen que una imagen vale más que mil palabras, ¿por qué no provocar sensaciones en tu público a través de fotografías? Nosotros te ayudaremos a sacar todo el partido y crear imágenes que dejen huella en tu público.',
     iconType: 'skin',
     category: 'fotografia',
   },
 
   {
     title: 'Fotografía de productos',
-    description: '',
+    description:
+      '¿Sabrías enamorar a tu público? Nuestro equipo se encargará de ello, a través de fotografías que muestran, de la forma más creativa y original posible, toda la gama de productos que ofreces.',
     iconType: 'sketch',
     category: 'fotografia',
   },

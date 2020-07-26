@@ -2,7 +2,7 @@
   <div class="squares-container-container">
     <h3>Nuestros servicios</h3>
 
-    <a-row class="squares-container_row">
+    <a-row class="squares-container_row" type="flex" justify="center">
       <a-col
         v-for="(square, k, i) in squares"
         :key="`square-${i}`"
@@ -11,7 +11,7 @@
         :style="style"
         @click="onSelectSquare(k)"
       >
-        <Square :title="square.title" />
+        <Square :title="square.title" :description="square.description ? square.description : ''" />
       </a-col>
     </a-row>
   </div>

@@ -17,10 +17,16 @@
     }
   }
 
-  & h2 {
+  & .square-container_texts {
     @include absCenter;
 
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    & h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+
+    & p {
+      color: $color-grey-light;
+    }
   }
 }
